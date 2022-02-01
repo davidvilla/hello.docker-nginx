@@ -1,8 +1,7 @@
 version: "3.3"
 
 services:
-  proxy:
+  web:
     image: nginx
     ports:
       - "80:80"
-
