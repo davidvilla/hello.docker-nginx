@@ -1,10 +1,8 @@
-version: "3.9"
+version: "3.3"
 
 services:
-  nginx:
-    build: nginx
+  proxy:
+    image: nginx
     ports:
       - "80:80"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/modules-enabled/nginx.conf
-      - ./nginx/app.conf:/etc/nginx/conf.d/app.conf
+
